@@ -170,7 +170,7 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     
                 </div>
-                <form id="submit-form"  autocomplete=off action="" >
+                <form id="submit-form"  autocomplete=off method="post" action="https://script.google.com/macros/s/AKfycbxAnUjN7lJXRA_CFT38lBUTXx1Ae7BzsKVpxDPwIf-1R8XrzRpJPxzu4cFYCIQW4CHK/exec" >
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -218,11 +218,13 @@
                 </div>
             </div>
         </footer>
+        <!--
         <script>
             $("#submit-form").submit((e)=>{
                 e.preventDefault()
                 $.ajax({
                     url:"https://script.google.com/macros/s/AKfycbxAnUjN7lJXRA_CFT38lBUTXx1Ae7BzsKVpxDPwIf-1R8XrzRpJPxzu4cFYCIQW4CHK/exec",
+                    console.log("haiii")
                     data:$("#submit-form").serialize(),
                     method:"post",
                     success:function (response){
@@ -237,11 +239,11 @@
                 })
             })
         </script>
-       
+       -->
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
+        <!-- Third party plugin JS
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
         <!--<script src="assets/mail/jqBootstrapValidation.js"></script>
